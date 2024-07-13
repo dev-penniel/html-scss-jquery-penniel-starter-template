@@ -1,0 +1,131 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #272727;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  margin-top: 100px;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+nav .large-screens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .mobile-screens {
+  display: none;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+  nav .mobile-screens {
+    display: none;
+  }
+}
+nav .mobile-screens a {
+  display: block;
+  padding: 10px;
+}
+nav .mobile-screens .social-media-links-mobile ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .mobile-screens .social-media-links-mobile ul a {
+  display: block;
+  padding: 10px;
+}
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+nav .nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  nav .nav-links ul {
+    display: none;
+  }
+}
+nav .nav-links ul a {
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  font-size: 16px;
+}
+nav .nav-links ul a:hover {
+  color: #ff0000;
+}
+nav .nav-links ul a:focus {
+  color: #ff0000;
+}
+nav .social-media-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  nav .social-media-links ul {
+    display: none;
+  }
+}
+nav .social-media-links ul a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+nav .menu-icon {
+  width: 30px;
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  nav .menu-icon {
+    display: block;
+  }
+}
+nav .close {
+  display: none;
+}

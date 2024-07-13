@@ -1,0 +1,32 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexSpaceBtwn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin paddingY($val){
+    padding-top: $val;
+    padding-bottom: $val;
+}
+
+@mixin paddingX($val) {
+    padding-left: $val;
+    padding-right: $val;
+}
+
+@mixin transition ($duration){
+    transition: all ease-in-out $duration;
+}
+
+@mixin mediaQuery($val){
+    @if $val == sm {
+        @media only screen and (max-width: 600px) {
+            @content;
+        }
+    } 
+}

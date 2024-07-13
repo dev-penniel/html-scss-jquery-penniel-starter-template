@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: $black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+section{
+    margin-top: $sectionSpace;
+}
+
+.container{
+    @include paddingX(20px);
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
